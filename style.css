@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+}
+
+header {
+  height: 15vh;
+  background-color: #FF69B4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    height: 30vh;
+  }
+}
+
+.contianerLogo {
+  width: 35vw;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .contianerLogo {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.contianerLogo img {
+  width: 6.5vw;
+}
+@media (max-width: 1000px) {
+  .contianerLogo img {
+    width: 7.5vw;
+  }
+}
+@media (max-width: 700px) {
+  .contianerLogo img {
+    width: 9vw;
+  }
+}
+.contianerLogo h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.7vw;
+}
+@media (max-width: 1000px) {
+  .contianerLogo h1 {
+    font-size: 2.1vw;
+  }
+}
+
+nav {
+  width: 40vw;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5vw;
+}
+@media (max-width: 1000px) {
+  nav ul {
+    font-size: 2vw;
+  }
+}
+nav ul a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  margin: 14px 56px;
+}/*# sourceMappingURL=style.css.map */
