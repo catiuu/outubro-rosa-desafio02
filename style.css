@@ -10,12 +10,12 @@
 
 header {
   height: 15vh;
-  background-color: #FF69B4;
+  background-color: #ff69b4;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-@media (max-width: 700px) {
+@media (max-width: 770px) {
   header {
     flex-direction: column;
     height: 30vh;
@@ -23,52 +23,71 @@ header {
 }
 
 .contianerLogo {
-  width: 35vw;
+  width: 25vw;
   display: flex;
   align-items: center;
+  color: white;
 }
-@media (max-width: 700px) {
+@media (max-width: 770px) {
   .contianerLogo {
     flex-direction: column;
     width: 100%;
   }
 }
-.contianerLogo img {
-  width: 6.5vw;
+.contianerLogo h1 {
+  text-transform: uppercase;
+  font-size: 1.7vw;
+  font-weight: 400;
 }
-@media (max-width: 1000px) {
-  .contianerLogo img {
-    width: 7.5vw;
+@media (max-width: 770px) {
+  .contianerLogo h1 {
+    font-size: 2.5vw;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
+  .contianerLogo h1 {
+    font-size: 3.1vw;
+  }
+}
+@media (max-width: 1000px) {
   .contianerLogo img {
     width: 9vw;
   }
 }
-.contianerLogo h1 {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 1.7vw;
+@media (max-width: 770px) {
+  .contianerLogo img {
+    width: 12vw;
+  }
 }
-@media (max-width: 1000px) {
-  .contianerLogo h1 {
-    font-size: 2.1vw;
+@media (max-width: 500px) {
+  .contianerLogo img {
+    width: 15vw;
   }
 }
 
 nav {
   width: 40vw;
 }
+@media (max-width: 770px) {
+  nav {
+    width: 100%;
+  }
+}
 nav ul {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   font-size: 1.5vw;
 }
-@media (max-width: 1000px) {
+@media (max-width: 770px) {
   nav ul {
-    font-size: 2vw;
+    justify-content: space-evenly;
+    font-size: 2.3vw;
+  }
+}
+@media (max-width: 500px) {
+  nav ul {
+    font-size: 3vw;
   }
 }
 nav ul a {
@@ -76,8 +95,132 @@ nav ul a {
   text-transform: uppercase;
 }
 
-section {
+.sectionSobre {
+  height: 60vh;
+  background-color: #ffd9ec;
   display: flex;
   align-items: center;
-  margin: 14px 56px;
+  justify-content: space-evenly;
+}
+@media (max-width: 600px) {
+  .sectionSobre {
+    flex-direction: column-reverse;
+    height: 70vh;
+  }
+}
+.sectionSobre p {
+  width: 38vw;
+  font-size: 1.5vw;
+}
+@media (max-width: 800px) {
+  .sectionSobre p {
+    width: 40vw;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 600px) {
+  .sectionSobre p {
+    width: 70vw;
+    font-size: 2.4vw;
+  }
+}
+@media (max-width: 450px) {
+  .sectionSobre p {
+    width: 75vw;
+    font-size: 3vw;
+  }
+}
+.sectionSobre img {
+  width: 25vw;
+}
+@media (max-width: 800px) {
+  .sectionSobre img {
+    width: 30vw;
+  }
+}
+@media (max-width: 600px) {
+  .sectionSobre img {
+    width: 34vw;
+  }
+}
+@media (max-width: 450px) {
+  .sectionSobre img {
+    width: 46vw;
+  }
+}
+
+.sectionConscientizacao {
+  height: 60vh;
+  background-color: #ff69b4;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 600px) {
+  .sectionConscientizacao {
+    flex-direction: column;
+    height: 70vh;
+  }
+}
+.sectionConscientizacao p {
+  width: 38vw;
+  font-size: 1.5vw;
+  color: #ffffff;
+}
+@media (max-width: 800px) {
+  .sectionConscientizacao p {
+    font-size: 2vw;
+    width: 40vw;
+  }
+}
+@media (max-width: 600px) {
+  .sectionConscientizacao p {
+    width: 70vw;
+    font-size: 2.4vw;
+  }
+}
+@media (max-width: 450px) {
+  .sectionConscientizacao p {
+    width: 75vw;
+    font-size: 3vw;
+  }
+}
+.sectionConscientizacao img {
+  width: 40vw;
+}
+@media (max-width: 800px) {
+  .sectionConscientizacao img {
+    width: 50vw;
+  }
+}
+@media (max-width: 600px) {
+  .sectionConscientizacao img {
+    width: 55vw;
+  }
+}
+@media (max-width: 450px) {
+  .sectionConscientizacao img {
+    width: 60vw;
+  }
+}
+
+.sectionDicas {
+  height: 60vh;
+  background-color: #ffd9ec;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+footer {
+  height: 12vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ff69b4;
+}
+footer p {
+  color: #ffffff;
+  text-align: justify;
 }/*# sourceMappingURL=style.css.map */
