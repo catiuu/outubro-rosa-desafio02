@@ -212,15 +212,106 @@ nav ul a {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+@media (max-width: 1000px) {
+  .sectionDicas {
+    height: auto;
+    padding: 20px;
+  }
+}
 
 footer {
   height: 12vw;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #ff69b4;
+  padding: 0 50px;
+}
+@media (max-width: 1000px) {
+  footer {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 250px;
+}
+@media (max-width: 1000px) {
+  footer nav {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 770px) {
+  footer nav {
+    width: 40vw;
+  }
+}
+footer nav ul {
+  display: flex;
+}
+footer nav ul li {
+  margin-right: 27px;
+}
+footer nav ul li:last-child {
+  margin-right: 0;
+}
+footer .navImg {
+  width: 5vw;
+}
+@media (max-width: 1000px) {
+  footer .navImg {
+    width: 8vw;
+  }
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 1000px) {
+  footer div {
+    margin-bottom: 20px;
+  }
 }
 footer p {
   color: #ffffff;
   text-align: justify;
+}
+@media (max-width: 800px) {
+  footer p {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 600px) {
+  footer p {
+    font-size: 2.4vw;
+  }
+}
+@media (max-width: 450px) {
+  footer p {
+    font-size: 3vw;
+  }
+}
+footer .footerImg {
+  max-width: 100px;
+}
+@media (max-width: 1000px) {
+  footer .footerImg {
+    width: 25vw;
+  }
+}
+@media (max-width: 600px) {
+  footer .footerImg {
+    width: 20vw;
+  }
+}
+@media (max-width: 450px) {
+  footer .footerImg {
+    width: 15vw;
+  }
 }/*# sourceMappingURL=style.css.map */

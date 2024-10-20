@@ -164,7 +164,6 @@ nav {
   }
 }
 
-// ----terminar----
 .sectionDicas {
   height: 60vh;
   background-color: $cor-secundaria;
@@ -172,16 +171,89 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  @media (max-width: 1000px) {
+    height: auto;
+    padding: 20px;
+  }
 }
 
 footer {
   height: 12vw;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: $cor-primaria;
+  padding: 0 50px;
+  @media (max-width: 1000px) {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 250px;
+    @media (max-width: 1000px) {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 770px) {
+      width: 40vw;
+    }
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    margin-right: 27px;
+  }
+
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+
+  .navImg {
+    width: 5vw;
+    @media (max-width: 1000px) {
+      width: 8vw;
+    }
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media (max-width: 1000px) {
+      margin-bottom: 20px;
+    }
+  }
   p {
     color: $cor-do-texto;
     text-align: justify;
+    @media (max-width: 800px) {
+      font-size: 2vw;
+    }
+    @media (max-width: 600px) {
+      font-size: 2.4vw;
+    }
+    @media (max-width: 450px) {
+      font-size: 3vw;
+    }
+  }
+  .footerImg {
+    max-width: 100px;
+    @media (max-width: 1000px) {
+      width: 25vw;
+    }
+    @media (max-width: 600px) {
+      width: 20vw;
+    }
+    @media (max-width: 450px) {
+      width: 15vw;
+    }
   }
 }
